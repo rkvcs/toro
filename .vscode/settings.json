@@ -1,0 +1,8 @@
+{
+  "deno.enablePaths": [
+    "./"
+  ],
+  "editor.inlayHints.enabled": "off",
+  "editor.tabSize": 4,
+  "editor.insertSpaces": false
+}

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@import url("https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap");
+
+.font-libertinus {
+    font-family: "Libertinus Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}

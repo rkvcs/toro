@@ -1,0 +1,31 @@
+{
+  "imports": {
+    "@hotwired/stimulus": "npm:@hotwired/stimulus@^3.2.2",
+    "@tailwindcss/cli": "npm:@tailwindcss/cli@^4.1.11",
+    "@types/pg": "npm:@types/pg@^8.15.4",
+    "bcryptjs": "npm:bcryptjs@^3.0.2",
+    "daisyui": "npm:daisyui@^5.0.43",
+    "dotenv": "npm:dotenv@^17.0.1",
+    "drizzle-kit": "npm:drizzle-kit@^0.31.4",
+    "drizzle-orm": "npm:drizzle-orm@^0.44.2",
+    "eta": "npm:eta@^3.5.0",
+    "hono": "jsr:@hono/hono@^4.8.4",
+    "pg": "npm:pg@^8.16.3",
+    "tailwindcss": "npm:tailwindcss@^4.1.11",
+    "#npm/": "./node_modules/",
+    "@app/": "./src/"
+  },
+  "tasks": {
+    "start": "deno run --allow-net --allow-read --allow-env ./src/main.ts",
+    "server": "deno run --allow-net --allow-read --allow-env --watch ./src/main.ts",
+    "build:style": "deno run -A npm:@tailwindcss/cli -i ./resources/style/app.css -o ./public/app.css",
+    "bundle": "deno bundle --platform browser --output public/bundle.js resources/scripts/app.js",
+    "db:push": "deno run -A npm:drizzle-kit push",
+    "dev": "deno task server & deno task build:style --watch & deno task bundle --watch"
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  },
+  "nodeModulesDir": "auto"
+}
