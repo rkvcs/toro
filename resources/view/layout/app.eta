@@ -1,0 +1,18 @@
+<!doctype html>
+<html data-theme="dark" lang="en" class="h-full">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Iron Horse</title>
+        <link href="/app.css" rel="stylesheet" />
+    </head>
+    <body class="font-libertinus flex gap-7 h-full">
+        <%~ include("../components/menu") %>
+		
+        <div class="w-7xl m-auto mt-9 p-7">
+			<%~ it.body %>
+        </div>
+
+        <script src="/bundle.js"></script>
+    </body>
+</html>
