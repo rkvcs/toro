@@ -1,0 +1,9 @@
+services:
+    app:
+        container_name: deno_toro
+        build: .
+        ports:
+            - "8000:8000"
+        volumes:
+            - .:/app
+        command: deno task dev

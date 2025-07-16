@@ -11,6 +11,7 @@
     "npm:bcryptjs@^3.0.2": "3.0.2",
     "npm:daisyui@^5.0.43": "5.0.46",
     "npm:dotenv@^17.0.1": "17.2.0",
+    "npm:drizzle-kit@*": "0.31.4_esbuild@0.25.6",
     "npm:drizzle-kit@~0.31.4": "0.31.4_esbuild@0.25.6",
     "npm:drizzle-orm@~0.44.2": "0.44.2_@types+pg@8.15.4_pg@8.16.3",
     "npm:eta@^3.5.0": "3.5.0",
