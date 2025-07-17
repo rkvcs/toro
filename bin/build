@@ -1,0 +1,10 @@
+#!/usr/bin/env -S deno run --allow-read --allow-write
+
+/*
+- .output
+    - public
+    - resources
+    - .env
+    - webapp
+*/
+console.info("bin/build [executed]")

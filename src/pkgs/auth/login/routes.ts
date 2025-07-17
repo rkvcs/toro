@@ -21,13 +21,6 @@ LoginApp.get('/check/:email', async (c: Context) => {
 	const token = c.req.query('token')
 	const users = await conn.select().from(Users).where(eq(Users.email, _email))
 
-	for(let x:string in Users){
-		console.info('--->', x)
-		console.info('----->', Users[x].dataType)
-	}
-
-	console.info(Users)
-
 	let is_valid = false
 
 	if(users.length > 0 && users[0].email == _email){
